@@ -1,0 +1,31 @@
+{
+  "name": "cctalk-message",
+  "version": "0.0.1",
+  "description": "A Class that creates CCTalk v4 Commands from Buffers or Arguments",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/direktspeed/node-cctalk-command.git"
+  },
+  "keywords": [
+    "cctalk",
+    "buffer",
+    "command",
+    "class"
+  ],
+  "author": "Frank Lemanschik",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/direktspeed/node-cctalk-command/issues"
+  },
+  "homepage": "https://github.com/direktspeed/node-cctalk-command#readme",
+  "dependencies": {
+    "crc": "^3.4.4"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
