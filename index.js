@@ -14,6 +14,7 @@ class ccTalkMessage {
       this._data = this._buffer.slice(4, this._buffer[1]+4);
       // TODO: checksum detection and parsing
       this._checksum = this._buffer[this._buffer[1]+4]
+
       if (this._checksum == undefined) {
           console.log(this._buffer)
           throw new Error('NO_CHECKSUM');
@@ -30,6 +31,7 @@ class ccTalkMessage {
           throw new Error('WRONG_CHECKSUM');
         }
       }
+
     } else {
       // create command
       if (command == undefined) {
