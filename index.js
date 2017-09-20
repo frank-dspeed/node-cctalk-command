@@ -27,8 +27,8 @@ class ccTalkMessage {
           this._crcType = 16;
           debug('ccMessage:crc')('CRC16_CHECKSUM');
         } else {
-          debug('ccMessage:crc')(this._buffer);
-          throw new Error('WRONG_CHECKSUM');
+          debug('ccMessage:crc::warning')(this._buffer);
+          //throw new Error('WRONG_CHECKSUM');
         }
       }
 
