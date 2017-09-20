@@ -108,7 +108,13 @@ class ccTalkMessage {
     return this._buffer;
   }
   crc16verify() {
-    var UArray = new Uint8Array([this._buffer[0],this._buffer[1],this._buffer[3]]);
+    //var UArray = new Uint8Array([this._buffer[0],this._buffer[1],this._buffer[3]]);
+        var UArray = new Uint8Array(3+ this._data.length);
+        //[this._buffer[0],this._buffer[1],this._buffer[3]];
+        UArray[0] = this._dest;
+        UArray[1] = this._data.length;
+        UArray[2] = this._command;
+        UArray.set(this._data, 3);
     var CRCArray = require('crc').crc16xmodem(Buffer.from(UArray))
         .toString(16)
         .match(/.{1,2}/g)
