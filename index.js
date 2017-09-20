@@ -1,6 +1,6 @@
 const debug = require('debug');
 const crc = require('crc');
-
+//const Buffer = require('safe-buffer').Buffer
 class ccTalkMessage {
   // src, dest, command, data, crc
   constructor(src, dest, command, data, crc) {
@@ -118,6 +118,7 @@ class ccTalkMessage {
     if ((this._buffer[2] == CRCArray[0]) && (this._buffer[this._buffer[1]+4] == CRCArray[1])) {
       return true;
     } else {
+      debug('ccMessage:crc')(this._buffer[2] +'=='+ CRCArray[0],this._buffer[this._buffer[1]+4]+'=='+ CRCArray[1]);
       return false;
     }
   }
