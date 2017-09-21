@@ -27,6 +27,6 @@
   },
   "devDependencies": {
     "mocha": "3.5.3",
-    "semantic-release": "8.0.0"
+    "semantic-release": "8.0.1"
   }
 }
