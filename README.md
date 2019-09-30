@@ -1,5 +1,5 @@
 # node-cctalk-command
-This accepts crc as int 8 or 16 this supports data as array rest is int.
+This can generate crc checksums and accepts crc as int 8 or 16 this supports data as array rest is int.
 
 
 Example
