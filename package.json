@@ -1,7 +1,7 @@
 {
-  "name": "cctalk-message",
-  "version": "0.0.1",
-  "description": "A Class that creates CCTalk v4 Commands from Buffers or Arguments",
+  "name": "node-cctalk-command",
+  "version": "1.0.2",
+  "description": "A Class that creates CCTalk v4 Commands from Buffers or Arguments gets used by node-cctalk to send commands to a node-cctalk-device Supports crc 8 and 16",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -11,6 +11,10 @@
     "url": "git+https://github.com/direktspeed/node-cctalk-command.git"
   },
   "keywords": [
+    "crc",
+    "message",
+    "node",
+    "node-cctalk",
     "cctalk",
     "buffer",
     "command",
@@ -19,14 +23,13 @@
   "author": "Frank Lemanschik",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/direktspeed/node-cctalk-command/issues"
+    "url": "https://github.com/direktspeed/node-cctalk-message/issues"
   },
-  "homepage": "https://github.com/direktspeed/node-cctalk-command#readme",
+  "homepage": "https://github.com/direktspeed/node-cctalk-message#readme",
   "dependencies": {
     "crc": "^3.4.4"
   },
   "devDependencies": {
-    "mocha": "6.0.2",
-    "semantic-release": "15.13.3"
+    "mocha": "6.0.2"
   }
 }
