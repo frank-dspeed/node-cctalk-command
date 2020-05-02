@@ -30,6 +30,6 @@
     "crc": "^3.4.4"
   },
   "devDependencies": {
-    "mocha": "6.2.2"
+    "mocha": "7.1.2"
   }
 }
